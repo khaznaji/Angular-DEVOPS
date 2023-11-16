@@ -7,7 +7,7 @@ import { Subscription } from '../model/subscription.model';
 })
 export class SubscriptionService {
 
-  private baseUrl = 'http://localhost:8089/api'; // L'URL de votre API Backend
+  private baseUrl = 'http://192.168.56.2:8089/api'; // L'URL de votre API Backend
 
   constructor(private http: HttpClient) { }
 
