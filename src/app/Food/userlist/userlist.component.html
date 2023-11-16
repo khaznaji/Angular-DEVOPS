@@ -1,0 +1,46 @@
+
+<div class="col-12">
+    <div class=" rounded h-100 p-4">
+        <h1 class="mb-4" style="color: rgb(107, 103, 103);">List </h1>
+        <hr>
+        <a style="color: rgb(122, 124, 129);" routerLink="/add" routerLinkActive="active" class="nav-item nav-link" data-bs-toggle="dropdown"><i class="fa fa-calendar"></i> Add </a>
+
+        <div class="table-responsive">
+            <table class="table ">
+                <thead>
+                    <tr>  
+                      
+                        <th scope="col" style="color: rgb(107, 103, 103);">Price</th>
+                        <th scope="col" style="color: rgb(107, 103, 103);">typeSub</th>
+        
+
+                        
+                        <th scope="col" style="color: rgb(107, 103, 103);"> D.Fin</th>
+                        <th scope="col" style="color: rgb(107, 103, 103);"> D.Debut</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr >
+     
+                            <td style="color: rgb(107, 103, 103);">      {{ event.price }}    </td>
+
+
+                                    <td style="color: rgb(107, 103, 103); max-width: 150px; word-wrap: break-word;">{{ event.typeSub }}</td>
+                                    <td style="color: rgb(107, 103, 103);">{{ event.startDate | date: 'dd/MM/yy' }}</td>
+                            <td style="color: rgb(107, 103, 103);">{{ event.endDate | date: 'dd/MM/yy' }}</td>
+
+
+                           
+                          <!-- <td><button (click)="affecterUserToEvent(1, event.id)">Affecter l'utilisateur à l'événement</button>
+                          </td> -->
+                    </tr>
+                   
+                </tbody>
+
+            </table>
+          
+        </div>
+    </div>
+</div>

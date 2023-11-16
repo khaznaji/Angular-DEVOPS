@@ -1,0 +1,37 @@
+
+<div>
+  
+    </div> 
+     
+     
+      <h1 style="color: rgb(107, 103, 103);">Add Subscription</h1>
+      <hr>
+     
+      <div>
+        <h1>Create Subscription</h1>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="startDate">Date de début :</label>
+            <input type="date" id="startDate" [(ngModel)]="subscription.startDate"  name="firstName"class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="endDate">Date de fin :</label>
+            <input type="date" id="endDate" [(ngModel)]="subscription.endDate"  name="firstName" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="price">Prix :</label>
+            <input type="number" id="price" [(ngModel)]="subscription.price"  name="firstName" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="typeSub">Type de souscription :</label>
+            <select id="typeSub" [(ngModel)]="subscription.typeSub"  name="firstName" class="form-control" required>
+              <option value="ANNUAL">ANNUAL</option>
+              <option value="MONTHLY">MONTHLY</option>
+              <option value="SEMESTRIEL">SEMESTRIEL</option>
+              <!-- Ajoutez d'autres options si nécessaire -->
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+      </div>
+      
